@@ -11,6 +11,10 @@ permissions:
   contents: read
   id-token: write
 
+concurrency:
+  group: corsair-npm-publish
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-24.04
